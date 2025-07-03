@@ -5,6 +5,9 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         s_new = ""
+
+        #making a new string and appending saves much more runtime and memory as compared to repeatedly editing original list within a for loop
+        
         for i in s:
             if i.isalnum():
                 s_new+=i
